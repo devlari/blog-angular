@@ -1,0 +1,40 @@
+.container__big-card {
+    border: solid 1px #fff;
+    /* background-color: #1a1a1a; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 20px;
+}
+
+.big-card__photo {
+    display: flex;
+    justify-content: center;
+}
+
+.big-card__photo > img {
+    width: 100%;
+}
+
+.big-card__title {
+    margin: 15px 0;
+}
+
+.big-card__title > h1 {
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.big-card__title > h1 > a {
+    color: rgb(114, 0, 143);
+}
+
+.big-card__description > p {
+    font-size: 1rem;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+    color: gray;
+    text-align: justify;
+}
