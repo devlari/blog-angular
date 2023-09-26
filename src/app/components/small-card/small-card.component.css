@@ -14,7 +14,8 @@
 .small-card__photo, .small-card__photo > img {
     width: 100%;
     padding: 5px;
-    max-width: 300px;
+    max-width: 200px;
+    max-height: 200px;
 }
 
 .small-card__title {
