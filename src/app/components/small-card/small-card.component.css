@@ -1,0 +1,40 @@
+.container__small-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.small-card__text {
+    display: flex;
+    flex-direction: column;
+}
+
+.small-card__photo, .small-card__photo > img {
+    width: 100%;
+    padding: 5px;
+    max-width: 300px;
+}
+
+.small-card__title {
+    margin: 15px 0;
+}
+
+.small-card__title > h1 {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.small-card__title > h1 > a {
+    color: rgb(114, 0, 143);
+}
+
+.small-card__description > p {
+    font-size: 1rem;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+    color: gray;
+    text-align: justify;
+}

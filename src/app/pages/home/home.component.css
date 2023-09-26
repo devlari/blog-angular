@@ -1,11 +1,11 @@
 .articles {
     display: flex;
-    align-items: center;
+    align-items: top;
     justify-content: center;
 }
 
 .articles__main, .articles__others {
-    width: 45%;
+    width: 40%;
     padding: 0 1rem;
 }
 
