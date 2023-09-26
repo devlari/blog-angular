@@ -1,0 +1,18 @@
+.container__menu-bar {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container__menu-bar > ul {
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    margin-bottom: 10px;
+    list-style: none;
+}
+
+.container__menu-bar > ul > li {
+    margin: 0 20px;
+}
