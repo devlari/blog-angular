@@ -1,30 +1,24 @@
 <app-menu-title></app-menu-title>
 
+
 <div class="articles">
-    <div class="articles__main">
+    <div class="articles__main" *ngIf="news[0]">
         <app-big-card 
-            photoCover="https://www.zup.com.br/wp-content/uploads/2021/03/5e32dc5538c14b0d4b28f87f_imagens-angular3-1024x677.png" 
-            cardTitle="Nova versão do Angular!" 
-            cardDescription="Veja o que muda na versão 15.12.0 beta. Novas funções, 
-            adicionando contextos globais, sistemas de cookie e muito mais!">
+            id="{{news[0].id}}"
+            photoCover="{{news[0].photo}}" 
+            cardTitle="{{news[0].title}}" 
+            cardDescription="{{news[0].description}}">
         </app-big-card>
     </div>
     <div class="articles__others">
-        <app-small-card 
-            photoCover="https://www.simplilearn.com/ice9/free_resources_article_thumb/parts_of_nodejs.png"
-            cardTitle="Node.JS: Use Cases"
-            cardDescription="O Node.JS é uma plataforma que permite a execução de códigos JavaScript fora do navegador.">
-        ></app-small-card>
-        <app-small-card 
-            photoCover="https://www.dartdigital.com.br/imagens/informacoes/empresas-que-usam-react-native-01.webp"
-            cardTitle="React Native: Como usar ao seu favor"
-            cardDescription="React native é uma ferramenta útil para desenvolvimento de apps.">
-        ></app-small-card>
-        <app-small-card 
-            photoCover="https://images.datacamp.com/image/upload/v1651047046/image8_0e61d0dad8.png"
-            cardTitle="Tutorial básico de Git"
-            cardDescription="É iniciante em Git? Saiba o essencial!">
-        ></app-small-card>
+        <div *ngFor="let n of news.slice(1)">
+            <app-small-card 
+                id="{{n.id}}"
+                photoCover="{{n.photo}}"
+                cardTitle="{{n.title}}"
+                cardDescription="{{n.description}}">
+            </app-small-card>
+        </div>
     </div>
 </div>
 <!-- <app-small-card></app-small-card> -->

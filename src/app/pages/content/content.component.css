@@ -25,11 +25,12 @@
 }
 
 .content__title {
-    margin: 10px 0;
+    margin: 20px 0;
 }
 
 .content__description {
-    padding: 0 50px;
+    padding: 0 80px;
+    margin-bottom: 40px;
 }
 
 .content__description > p {

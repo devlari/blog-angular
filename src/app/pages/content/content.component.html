@@ -2,19 +2,16 @@
     <a [routerLink]="['']"> < Voltar </a>
     <div class="content__cover">
         <img 
-        src="https://github.githubassets.com/images/modules/explore/social.jpg"
+        src="{{photoCover}}"
         />
     </div>
     <div class="content__title">
-        <h1>Título</h1>
+        <h1>{{contentTitle}}</h1>
         <hr/>
     </div>
     <div class="content__description">
         <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-            Minus, dolor quisquam, omnis ab quos officia assumenda consectetur 
-            ea commodi ullam, ut hic illo architecto repellendus voluptatibus 
-            pariatur a atque deleniti.
+            {{contentText}}
         </p>
     </div>
 </div>

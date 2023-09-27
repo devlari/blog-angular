@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MockDataService } from 'src/app/service/news.service';
+import { news } from 'src/app/types/news';
 
 @Component({
   selector: 'app-home',
@@ -6,10 +8,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.css', './home.responsive.component.css']
 })
 export class HomeComponent implements OnInit {
+  news: news = [];
 
-  constructor() { }
+  constructor(private mockDataService: MockDataService) { }
 
   ngOnInit(): void {
+    this.news = this.mockDataService.getMockData();
   }
 
 }
